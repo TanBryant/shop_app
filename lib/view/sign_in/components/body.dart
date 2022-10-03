@@ -1,11 +1,11 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:shop_app/component/socal_card.dart';
+import 'package:flutter_app/component/socal_card.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'package:shop_app/component/custom_surfix.dart';
-import 'package:shop_app/component/default_button.dart';
-import 'package:shop_app/view/sign_in/components/sign_form.dart';
+import 'package:flutter_app/component/custom_surfix_icon.dart';
+import 'package:flutter_app/component/default_button.dart';
+import 'package:flutter_app/view/sign_in/components/sign_form.dart';
 
 import '../../../component/form_eror.dart';
 import '../../../component/no_account.dart';
@@ -30,10 +30,9 @@ class Body extends StatelessWidget {
                 Text(
                   "IVY moda",
                   style: TextStyle(
-                    color: Color.fromARGB(255, 25, 190, 44),
+                    color: Color.fromARGB(255, 13, 224, 20),
                     fontSize: getProportionateScreenWidth(40),
                     fontWeight: FontWeight.bold,
-                    fontFamily: "Tahoma",
                   ),
                 ),
                 Text(
@@ -47,11 +46,11 @@ class Body extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SocalCard(
-                      icon: "assets/icons/facebook-2.svg",
+                      icon: "assets/icons/google-icon.svg",
                       press: () {},
                     ),
                     SocalCard(
-                      icon: "assets/icons/google-icon.svg",
+                      icon: "assets/icons/facebook-2.svg",
                       press: () {},
                     ),
                     SocalCard(

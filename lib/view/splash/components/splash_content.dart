@@ -13,19 +13,22 @@ class SplashContent extends StatelessWidget {
       children: <Widget>[
         Spacer(),
         Text(
-          "IVY Moda",
+          "IVY moda Store",
           style: TextStyle(
-            fontSize: getProportionateScreenHeight(50),
-            color: Color.fromRGBO(62, 207, 0, 1),
+            fontSize: getProportionateScreenHeight(40),
+            color: Color.fromARGB(255, 14, 13, 13),
+            fontWeight: FontWeight.bold,
           ),
         ),
+        // Text("Wellcome to Namphan0211 , Let's shop!"),
         Text(
           text!,
           textAlign: TextAlign.center,
         ),
-        Spacer(flex: 3),
+        Spacer(flex: 2),
         Image.asset(
           image!,
+          //  "assets/images/splash_1.png"
           height: getProportionateScreenHeight(300),
           width: getProportionateScreenWidth(350),
         ),

@@ -13,22 +13,19 @@ class Body extends StatelessWidget {
         width: double.infinity,
         child: Padding(
           padding:
-              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(20)),
+              EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(10)),
           child: SingleChildScrollView(
             child: Column(
               children: [
                 SizedBox(height: SizeConfig.screenHeight * 0.04), // 4%
+                Text("Khách hàng mới của \n        IVY moda",
+                    style: TextStyle(
+                      color: Colors.greenAccent,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    )),
                 Text(
-                  "Khách hàng mới\nIVY moda",
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 25, 190, 44),
-                    fontSize: getProportionateScreenWidth(40),
-                    fontFamily: "Tahoma",
-                  ),
-                  textAlign: TextAlign.center,
-                ),
-                Text(
-                  "Điền mọi thông tin bên dưới để tạo tài khoản",
+                  "Nếu bạn chưa có tài khoản trên ivymoda.com\nhãy sử dụng tùy chọn này để truy cập biểu mẫu đăng ký.\n Bằng cách cung cấp cho IVY moda thông tin chi tiết của bạn,\n quá trình mua hàng trên ivymoda.com sẽ là một trải nghiệm thú vị và nhanh chóng hơn!",
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),

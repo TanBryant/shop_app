@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../component/custom_surfix.dart';
+import '../../../component/custom_surfix_icon.dart';
 import '../../../component/default_button.dart';
 import '../../../component/form_eror.dart';
 import '../../../constants.dart';
@@ -42,7 +42,7 @@ class _SignFormState extends State<SignForm> {
           // buildEmail
           buildEmailFormField(),
           SizedBox(
-            height: getProportionateScreenHeight(30),
+            height: getProportionateScreenHeight(40),
           ),
           buildPasswordFormField(),
           SizedBox(
@@ -63,15 +63,15 @@ class _SignFormState extends State<SignForm> {
               Text(
                 'Nhớ mật khẩu',
                 style: TextStyle(
-                  color: Colors.green,
+                  color: Colors.greenAccent,
                 ),
               ),
               Spacer(),
               Text(
                 "Quên mật khẩu?",
                 style: TextStyle(
+                  decoration: TextDecoration.underline,
                   color: Colors.blueAccent,
-                  fontSize: 15,
                 ),
               ),
             ],
@@ -117,7 +117,7 @@ class _SignFormState extends State<SignForm> {
         return null;
       },
       decoration: InputDecoration(
-        hintText: "Mật Khẩu",
+        hintText: "Mật khẩu....",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
     );
@@ -146,7 +146,7 @@ class _SignFormState extends State<SignForm> {
         return null;
       },
       decoration: InputDecoration(
-        hintText: "Email/SĐT",
+        hintText: "Email/SĐT....",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
     );

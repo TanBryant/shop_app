@@ -1,11 +1,9 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'package:shop_app/provider/CartProvider.dart';
-import 'package:shop_app/provider/login_provider.dart';
-import 'package:shop_app/provider/ProductProvider.dart';
-import 'package:shop_app/routes.dart';
-import 'package:shop_app/theme.dart';
+import 'package:flutter_app/provider/cartProvider.dart';
+import 'package:flutter_app/provider/login_provider.dart';
+import 'package:flutter_app/provider/productProvider.dart';
+import 'package:flutter_app/routes.dart';
+import 'package:flutter_app/theme.dart';
 import 'package:provider/provider.dart';
 
 import 'constants.dart';
@@ -18,8 +16,15 @@ void main() {
 class MyApp extends StatelessWidget {
   get kTextColor => null;
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // return MaterialApp(
+    //   title: 'Flutter Demo',
+    //   theme: theme(),
+    //   initialRoute: SplashScreen.routeName,
+    //   routes: routes,
+    // );
     return MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (context) => ProductProvider()),
@@ -27,7 +32,7 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(create: (context) => LoginProvider()),
         ],
         child: MaterialApp(
-          title: "IvyModa App",
+          title: 'IVY moda',
           theme: theme(),
           initialRoute: SplashScreen.routeName,
           routes: routes,
@@ -43,7 +48,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   late TabController tabController;
-
   @override
   Widget build(BuildContext context) {
     tabController = TabController(length: 2, vsync: this);

@@ -2,9 +2,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'package:shop_app/constants.dart';
-import 'package:shop_app/view/sign_in/sign_in_screen.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:flutter_app/constants.dart';
+import 'package:flutter_app/view/sign_in/sign_in_screen.dart';
+import 'package:flutter_app/size_config.dart';
 
 import '../../../component/default_button.dart';
 import 'splash_content.dart';
@@ -21,16 +21,7 @@ class _BodyState extends State<Body> {
   List<Map<String, String>> splashData = [
     {
       "text": "Chúng tôi đem đến\ntrại nghiệm tuyệt vời cho ban.",
-      "image": "assets/images/thudong.png",
-    },
-    {
-      "text":
-          "Chúng tôi giúp mọi người kết nối với cửa hàng \n Trên khắp mọi miền tổ quốc",
-      "image": "assets/images/logo-ivy.png"
-    },
-    {
-      "text": "Chúng tôi đem đến  \n trại nghiệm tuyệt vời cho ban.",
-      "image": "assets/images/splash_3.png"
+      "image": "assets/images/splash_2.png",
     },
   ];
   @override
@@ -69,7 +60,7 @@ class _BodyState extends State<Body> {
                     flex: 3,
                   ),
                   DefaultButton(
-                    text: "Hãy vào trong của hàng nào!",
+                    text: "Hãy đến với thiên đường thời trang!",
                     press: () {
                       Navigator.pushNamed(context, SignInScreen.routeName);
                     },
@@ -88,13 +79,13 @@ class _BodyState extends State<Body> {
     return AnimatedContainer(
       duration: kAnimationDuration,
       margin: const EdgeInsets.only(right: 5),
-      height: 7,
+      height: 6,
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
         color: currentPage == index
-            ? Color.fromARGB(255, 49, 226, 18)
-            : Color.fromARGB(255, 216, 216, 216),
-        borderRadius: BorderRadius.circular(4),
+            ? Color.fromARGB(255, 6, 6, 5)
+            : const Color(0xFFD8D8D8),
+        borderRadius: BorderRadius.circular(3),
       ),
     );
   }

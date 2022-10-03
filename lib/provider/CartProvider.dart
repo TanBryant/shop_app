@@ -1,6 +1,5 @@
-import 'dart:developer';
-
 import 'package:flutter/widgets.dart';
+
 import '../models/Product.dart';
 
 class CartProvider with ChangeNotifier {
@@ -8,7 +7,6 @@ class CartProvider with ChangeNotifier {
   int _quantity = 1;
   int get counter => _counter;
   int get quantity => _quantity;
-
   double _totalPrice = 0.0;
   double get totalPrice => _totalPrice;
 

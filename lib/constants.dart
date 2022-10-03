@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:flutter_app/size_config.dart';
 
-const kPrimaryColor = Color.fromARGB(255, 233, 10, 10);
+const kPrimaryColor = Color(0xFFFF7643);
 const kPrimaryLightColor = Color(0xFFFFECDF);
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
   colors: [Color(0xFFFFA53E), Color(0xFFFF7643)],
 );
-
 const kSecondaryColor = Color(0xFF979797);
 const kTextColor = Color(0xFF757575);
 
@@ -23,7 +22,7 @@ final headingStyle = TextStyle(
 
 const defaultDuration = Duration(milliseconds: 250);
 
-//Form Error
+// Form Error
 final RegExp emailValidatorRegExp =
     RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
 const String kEmailNullError = "Vui lòng nhập email của bạn";
@@ -38,7 +37,7 @@ const String kAddressNullError = "Vui lòng nhập địa chỉ của bạn";
 final otpInputDecoration = InputDecoration(
   contentPadding:
       EdgeInsets.symmetric(vertical: getProportionateScreenWidth(15)),
-  border: OutlineInputBorder(),
+  border: outlineInputBorder(),
   focusedBorder: outlineInputBorder(),
   enabledBorder: outlineInputBorder(),
 );

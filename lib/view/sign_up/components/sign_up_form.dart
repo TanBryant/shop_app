@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../component/custom_surfix.dart';
+import '../../../component/custom_surfix_icon.dart';
 import '../../../component/default_button.dart';
 import '../../../component/form_eror.dart';
 import '../../../constants.dart';
@@ -45,9 +45,9 @@ class _SignUpFormState extends State<SignUpForm> {
           SizedBox(height: getProportionateScreenHeight(30)),
           buildConformPassFormField(),
           FormError(errors: errors),
-          SizedBox(height: getProportionateScreenHeight(40)),
+          SizedBox(height: getProportionateScreenHeight(30)),
           DefaultButton(
-            text: "Tiếp tục",
+            text: "ĐĂNG KÝ",
             press: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
@@ -84,7 +84,7 @@ class _SignUpFormState extends State<SignUpForm> {
         return null;
       },
       decoration: InputDecoration(
-        hintText: "Nhập lại mật khẩu...",
+        hintText: "Nhập Lại Mật Khẩu....",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
     );
@@ -113,7 +113,7 @@ class _SignUpFormState extends State<SignUpForm> {
         return null;
       },
       decoration: InputDecoration(
-        hintText: "Mật Khẩu...",
+        hintText: "Mật Khẩu....",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
     );
@@ -142,7 +142,7 @@ class _SignUpFormState extends State<SignUpForm> {
         return null;
       },
       decoration: InputDecoration(
-        hintText: "Email...",
+        hintText: "Email/SĐT....",
         floatingLabelBehavior: FloatingLabelBehavior.always,
       ),
     );

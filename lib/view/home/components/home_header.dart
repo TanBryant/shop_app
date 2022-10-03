@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/view/cart/cart_screen.dart';
-import 'package:shop_app/view/home/components/icon_btn_with_counter.dart';
+import 'package:flutter_app/view/cart/cart_screen.dart';
+import 'package:flutter_app/view/home/components/icon_btn_with_counter.dart';
 import 'package:provider/provider.dart';
 import 'package:badges/badges.dart';
 import '../../../constants.dart';
@@ -28,19 +28,19 @@ class HomeHeader extends StatelessWidget {
             width: SizeConfig.screenWidth * 0.6,
             decoration: BoxDecoration(
               color: kSecondaryColor.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(15),
+              borderRadius: BorderRadius.circular(100),
             ),
             child: TextField(
               onChanged: (value) => print(value),
               decoration: InputDecoration(
                   contentPadding: EdgeInsets.symmetric(
-                      horizontal: getProportionateScreenWidth(20),
+                      horizontal: getProportionateScreenWidth(30),
                       vertical: getProportionateScreenWidth(9)),
                   border: InputBorder.none,
                   focusedBorder: InputBorder.none,
                   enabledBorder: InputBorder.none,
-                  hintText: "Tìm kiếm",
-                  prefixIcon: Icon(Icons.search)),
+                  hintText: "TÌM KIẾM SẢN PHẨM",
+                  prefixIcon: Icon(Icons.catching_pokemon)),
             ),
           ),
           IconBtnWithCounter(
@@ -48,11 +48,6 @@ class HomeHeader extends StatelessWidget {
             svgSrc: "assets/icons/Cart Icon.svg",
             press: () => Navigator.pushNamed(context, CartScreen.routeName),
             //  Navigator.pushNamed(context, CartScreen.routeName)
-          ),
-          IconBtnWithCounter(
-            svgSrc: "assets/icons/Bell.svg",
-            numOfitem: 3,
-            press: () {},
           ),
         ],
       ),

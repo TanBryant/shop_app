@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/models/Product.dart';
-import 'package:shop_app/size_config.dart';
+import 'package:flutter_app/models/Product.dart';
+import 'package:flutter_app/size_config.dart';
 
 import 'components/body.dart';
 import 'components/custom_app_bar.dart';
